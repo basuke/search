@@ -75,7 +75,7 @@ class PrgComponent extends Object {
 				// Its important to set it also back to the controllers passed args!
 				$name = $field['field'];
 				if (isset($args[$name])) {
-					$this->controller->params['named'][$name] = $this->controller->passedArgs[$name] = $args[$name] = pack('H*', $args[$name]);
+					$this->controller->passedArgs[$name] = $args[$name] = pack('H*', $args[$name]);
 				}
 			}
 
